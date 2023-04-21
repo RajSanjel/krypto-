@@ -1,0 +1,37 @@
+import logo from "../../images/logo.png";
+
+const Footer = () => {
+  return (
+    <div className="w-full flex md:jusify-center justify-between items-center p-4 flex-col gradient-bg-footer">
+      <div className="w-full flex sm:flex-row flex-col justify-between items-center-my-4">
+        <div className="flex flex-0.5 justify-center items-center">
+          <img src={logo} alt="krypt" className="w-32" />
+        </div>
+        <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-4">
+          <p className="text-white text-center mx-2 cursor-pointer text-base">
+            Market
+          </p>
+          <p className="text-white text-center mx-2 cursor-pointer text-base">
+            Exchange
+          </p>
+          <p className="text-white text-center mx-2 cursor-pointer text-base">
+            Tutorials
+          </p>
+          <p className="text-white text-center mx-2 cursor-pointer text-base">
+            Wallets
+          </p>
+        </div>
+      </div>
+      <div className="flex justify-center items-center flex-col mt-5">
+        <p className="text-white text-sm text-center">Come join us!</p>
+        <p className="text-white text-sm text-center">info@kryptomastery.com</p>
+      </div>
+      <div className="sm:w-[90%] w-full h-[0.25px] bg-gray-400 mt-5" />
+      <div className="sm:w-[90%] w-full flex justify-between ">
+        <p className="text-white text-sm text-center">@kryptomastery 2023</p>
+        <p className="text-white text-sm text-center">All rights reserved</p>
+      </div>
+    </div>
+  );
+};
+export default Footer;
